@@ -1,19 +1,18 @@
-programa
-{
-	
-	funcao inicio()
-	{
-		
-	}
-}
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 40; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
+programa {
+  funcao inicio() {
+    cadeia nome[10]
+    cadeia continente[10]
+    inteiro populacao[10]
+    inteiro opcao, i
+
+    escreva("---- MENU ----")
+    escreva("\n1- Cadastro do páis")
+    escreva("\n2- Listar")
+    escreva("\n3- Pesquisar")
+    escreva(" \n4- Estátisticas")
+    escreva("\n5- Sair")
+    escreva("\nEscolha uma opção: ")
+    leia(opcao)
+    }
+   }
+  
