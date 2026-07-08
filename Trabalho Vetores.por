@@ -4,6 +4,7 @@ programa {
     cadeia continente[10]
     inteiro populacao[10]
     inteiro opcao, i, qtd = 0
+    real menor, maior, media 
 
     escreva("---- MENU ----")
     escreva("\n1- Cadastro do páis")
@@ -20,20 +21,28 @@ programa {
     			leia(qtd)
 
     		para(i = 0; i < qtd; i++){
+    			escreva("Informe o nome do ", i + 1, " continente: ")
+    				leia(continente[i])
     			escreva("Informe o nome do ", i + 1, " pais: ")
     				leia(nome[i])
+    			escreva("Informe a população do ", i + 1, " pais: ")
+    				leia(populacao[i])
+    				pare
     		}
+    		 caso 2: 
+    		 se(qtd == 0){
+    		 	escreva("\nNenhum país foi cadastrado!")	
+    	 } senao{ 
+    	 	para(i = 0; i < qtd; i++){
+    	 		escreva("\nPaís ", i + 1, ": ")
+    	 		escreva("\nNome: ", nome[i])
+    	 		escreva("\nContinente: ", continente[i])
+    	 		escreva("\nPopulação: ", populacao[i])
+    	 		}
+    	        pare    	 	
+    	 	}
+    	 
+    		 
     }
   }
 }
-/* $$$ Portugol Studio $$$ 
- * 
- * Esta seção do arquivo guarda informações do Portugol Studio.
- * Você pode apagá-la se estiver utilizando outro editor.
- * 
- * @POSICAO-CURSOR = 600; 
- * @PONTOS-DE-PARADA = ;
- * @SIMBOLOS-INSPECIONADOS = ;
- * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
- * @FILTRO-ARVORE-TIPOS-DE-SIMBOLO = variavel, vetor, matriz, funcao;
- */
